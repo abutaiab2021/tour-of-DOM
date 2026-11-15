@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Three</title>
+</head>
+<body>
+    <ul>
+        <li>Bread</li>
+        <li class="tick">Coffee</li>
+        <li>Pineapple Cake</li>
+    </ul>
+
+    <script>
+        // select all li elements
+        let matches = document.querySelectorAll("ul li");
+
+        // printing all number of the selected li elements.
+        document.write("Numbers of selected elements :"+matches.length+"<hr>")
+
+        // printing the content of selected li elements
+        for(let elem of matches){
+            document.write(elem.innerHTML + "<br>");
+        }
+
+        // applying the line throw style to first element with class tick
+        matches = document.querySelectorAll("ul li.tick");
+        // console.log(matches);
+        matches[0].style.textDecoration = "line-through";//style bannan vul hoisilo
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector All</title>
+</head>
+<body>
+    <h1 id="heading">Welcome to my website for query selector all</h1>
+    <ul>
+        <p class="paragraph">I am learning javascript DOM getElementByTagName</p>
+        <p class="paragraph">I am learning javascript DOM getElementById</p>
+        <p class="paragraph">I am learning javascript DOM getElementByClassName</p>
+        <p class="paragraph">I am learning javascript DOM querySelectorAll</p>
+    </ul>
+    <button >Good Bye</button>
+
+    <script>
+        // const allPara = document.querySelectorAll('.paragraph');
+        const singlePara =  document.querySelectorAll("p");
+        for(const single of singlePara){
+            console.log(single.innerText);
+        }
+    </script>
+</body>
+</html>

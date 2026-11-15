@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Name</title>
+    <style>
+        h1{
+            color: green;
+        }
+        h2{
+            color: purple;
+        }
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Welcome to my Website</h1>
+
+        <p>I am learing javaScript</p>
+        <p>I am learing HTML</p>
+        <p>I am learing CSS</p>
+
+        <h2>My Skills</h2>
+        <p>Oracle Apex</p>
+        <p>javaScript</p>
+    </main>
+    <script>
+        const paragraphs = document.getElementsByTagName('p');
+        // console.log(paragraphs);
+        // console.log(paragraphs.length);
+
+        // console.log(paragraphs[1]);
+        // console.log(paragraphs[0].innerHTML);
+
+        for(i = 0; i<paragraphs.length; i++){
+            console.log("Index No : "+ i +" : "+paragraphs[i].innerText);
+        }
+    </script>
+</body>
+</html>

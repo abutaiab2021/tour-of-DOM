@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+    <script>
+        // alert("From Head " + document.body);
+    </script>
+</head>
+<body>
+    <h1>Welcome to my assignment</h1>
+    <p id="mark">HTML</p>
+    <p class="info">CSS</p>
+    <p class="info">JavaScript</p>
+
+    <script>
+        // set background color using id selector
+        const mark = document.getElementById('mark');
+        mark.style.background = "yellow";
+
+        // display the matched element by using className
+        const matches = document.getElementsByClassName('info');
+        document.write("Number of the matches Eelements : ",matches.length)
+
+        // font bold using array index by js
+        matches[0].style.fontWeight = "bold";
+
+        // font italic using js
+        matches[matches.length -1].style.fontStyle = "italic";
+
+        // text color and background change using js
+        for(const elem in matches){
+            matches[elem].style.color="red";
+            matches[elem].style.background="black";
+        }
+
+        // alert("From Body "+ document.body);
+    </script>
+</body>
+</html>

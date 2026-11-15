@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Class Name</title>
+</head>
+<body>
+    <h1>My Learning Website</h1>
+     <ul>
+        <li class="subject">javaScript</li>
+        <li class="subject">html</li>
+        <li class="subject">css</li>
+        <li class="subject">oracleApex</li>
+     </ul>
+
+    <h1>My Favorite Programing Language</h1>
+    <p class="subject">javascript</p>
+
+    <script>
+        const subjects = document.getElementsByClassName('subject');
+        console.log(subjects.length);
+        for(const sub of subjects){
+            console.log(sub.innerText)
+        }
+    </script>
+</body>
+</html>

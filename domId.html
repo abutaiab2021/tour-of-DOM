@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom ID</title>
+</head>
+<body>
+    <h1 id="heading">Hello javaScript</h1>
+    <p id="description">I am learning now</p>
+    <button id="myButton">My Button</button>
+
+    <script>
+        const heading = document.getElementById('heading');
+        heading.innerText = "Welcome to Dom!! world !!";
+
+        const desc =  document.getElementById('paragraph');
+        // console.log(desc);
+       
+        const myButton =  document.getElementById('myButton');
+        console.log(myButton);
+        myButton.innerText="Click Me";
+    </script>
+</body>
+</html>

@@ -1,3 +1,3 @@
-console.log("javaScript call by Outside");
-console.log(document);
+// console.log("javaScript call by Outside");
+// console.log(document);
 

@@ -10,6 +10,10 @@
         h1 {
             color: greenyellow;
         }
+
+        .foods .food{
+            color: red;
+        }
     </style>
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -19,26 +23,49 @@
         <h1>This is my Heading</h1>
     </header>
     <main>
-        <h1>Welcome to our DOM</h1>
-        <ul>
-            <li>Shapayet</li>
-            <li>Bonobash</li>
-            <li>Jalali</li>
-        </ul>
+        <section id="songs">
+            <h1 class="songs">Welcome to our DOM song</h1>
+            <ul>
+                <li>Shapayet</li>
+                <li>Bonobash</li>
+                <li>Jalali</li>
+            </ul>
+        </section>
+        <section id="food">
+            <h1 id="food-title">My fevorite fooods</h1>
+            <ul class="foods">
+                <li>Vat</li>
+                <li class="food">Mas</li>
+                <li class="food">Goro</li>
+                <li class="food">Kashi</li>
+                <li class="forien">Burger</li>
+                <li class="forien">Pizza</li>
+                <li>Sorma</li>
+            </ul>
+        </section>
     </main>
     <script>
         // console.log("Hello javaScript !!!");
         // console.log('Helo bole chole gelo');
-        console.log('Document Object Model');
+        // console.log('Document Object Model');
 
-        const student = {
-            name: 'Abu Taiab',
-            age: 32,
-            class: 'Ten',
-            study: function (subject) {
-                console.log('Studing Subject :', subject);
-            }
-        }
+        
+
+        // const student = {
+        //     name: 'Abu Taiab',
+        //     age: 32,
+        //     class: 'Ten',
+        //     study: function (subject) {
+        //         console.log('Studing Subject :', subject);
+        //     }
+        // }
+
+        const foodTitle = document.getElementById('food-title');
+        console.log(foodTitle.innerHTML);
+
+        const foodList = document.getElementsByClassName('foods');
+        console.log(foodList);
+
 
     </script>
     <script src="js/hello.js"></script>

@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom ID</title>
+    <style>
+        /* #desc{
+            background-color: lightblue;
+        } */
+         h1{
+            border: 2px solid green;
+         }
+    </style>
 </head>
 <body>
     <h1 id="heading">Hello javaScript</h1>
@@ -14,12 +22,23 @@
         const heading = document.getElementById('heading');
         heading.innerText = "Welcome to Dom!! world !!";
 
-        const desc =  document.getElementById('paragraph');
+        const desc =  document.getElementById('description');
+        // desc.style.color ='red';
+        // desc.style.fontSize='30px';
+        // desc.style.fontWeight='bold';
+
+        desc.style.cssText += 'color:green;font-size:50px;font-weight:bold;background-color:lightblue';
+        desc.style.cssText = 'color:green;font-size:50px;font-weight:bold';
+        desc.style.cssText = 'color:green;font-size:50px';
+        desc.style.cssText += 'color:red;border:2px sloid green';
+
+
         // console.log(desc);
-       
-        const myButton =  document.getElementById('myButton');
-        console.log(myButton);
-        myButton.innerText="Click Me";
+        
+
+        // const myButton =  document.getElementById('myButton');
+        // console.log(myButton);
+        // myButton.innerText="Click Me";
     </script>
 </body>
 </html>

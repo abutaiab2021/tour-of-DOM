@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By Name</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <h1>This is our Form Page</h1>
+            <input type="text" name="firstName" id="fname" placeholder="First Name">
+            <input type="text" name="lastName" id="lname" placeholder="Last Name">
+            <label for="javaScript">Java Script</label>
+            <input type="radio" name="language" id="javaScript" value="javaScript">
+            <label for="typeScript">Type Script
+            <input type="radio" name="language" id="typeScript"></label>
+        </form>
+    </main>
+    <script>
+        const firstName = document.getElementsByName('language');
+        console.log(firstName);
+    </script>
+</body>
+</html>

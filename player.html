@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Players</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <main>
-        <section id="books-container" class="books">
+    <main id="main-container">
+        <section id="books-container" class="section-card">
             <h2>My Favorite Books</h2>
             <ul>
                 <li>The 5 am CLub</li>
@@ -16,7 +18,7 @@
                 <li>Sokher Somikoron</li>
             </ul>
         </section>
-        <section id="foods">
+        <section id="foods" class="section-card">
             <h2>My Favorite Fruits</h2>
             <ul>
                 <li>Banana</li>
@@ -25,9 +27,9 @@
                 <li>Lichu</li>
             </ul>
         </section>
-        <section id="players-container">
+        <section id="players-container" class="section-card">
             <h2>My Favorite Players</h2>
-            <ul>
+            <ul id="players-list">
                 <li>Messi</li>
                 <li>Ronaldo</li>
                 <li>Naymer</li>
@@ -37,5 +39,7 @@
         </section>
     </main>
     <script src="js/cssInJS.js"></script>
+    <script src="js/childParent.js"></script>
+    <script src="js/append.js"></script>
 </body>
 </html>
